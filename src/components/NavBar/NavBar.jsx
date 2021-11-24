@@ -14,10 +14,13 @@ const NavBar = () => {
         <a href="#" className="brand-logo">
           библиотека современных знаний
         </a>
-        <li>
-            <a class="waves-effect waves-light btn" onClick={logout}>Logout</a>
-          </li>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <li>
+            <Link to="/profile">Профиль</Link>
+          </li>
+          <li>
+            <Link to="/learn_more">Материалы для ознакомления</Link>
+          </li>
           <li>
             <Link to="/users">Пользователи</Link>
           </li>
@@ -27,12 +30,8 @@ const NavBar = () => {
           <li>
             <Link to="/posts">Посты</Link>
           </li>
-
           <li>
-            <Link to="/profile">Профиль</Link>
-          </li>
-          <li>
-            <Link to="/learn_more">Материалы для ознакомления</Link>
+            <a class="waves-effect waves-light btn" onClick={logout}>Logout</a>
           </li>
         </ul>
       </div>

@@ -51,10 +51,16 @@ function Posts() {
       <h2>Posts</h2> 
       {posts && 
         posts.map((post) => ( 
-          <div className="card"> 
-            <h5>{post.title}</h5> 
-            <div>{post.body}</div> 
-          </div> 
+          <div class="container">
+            <div class="col s12 m6">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">{post.title}</span>
+                  <p>{post.body}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         ))} 
       <div ref={trigger} className="card  red darken-4">I am reference</div> 
     </div> 
