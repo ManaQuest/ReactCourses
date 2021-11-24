@@ -4,7 +4,7 @@ import { AuthContext } from "../context/context";
 const Login = () => {
   const {setIsAuth} = useContext(AuthContext);
   const [data,setData] = useState({login:'',password:''});
-  const login={login:"1122",password:"1122"};
+  const login={login:"Kosty",password:"1234"};
   const onChange=(e)=>{
 if(e.target.id==='login'){
   setData({...data,login:e.target.value});
@@ -50,7 +50,7 @@ if(e.target.id==='login'){
               type="submit"
               name="action"
             >
-              Submit
+              Авторизоваться
               <i class="material-icons right">send</i>
             </button>
           </div>

@@ -15,9 +15,9 @@ const AppRouter=()=>{
     return(
         isAuth?
         <Switch>
-            {/*<Route path="/users" component={Users}/>
+            <Route path="/users" component={Users}/>
             <Route path="/devices" component={Devises}/>
-            <Route path="/posts" component={Posts}/>*/}
+            <Route path="/posts" component={Posts}/>
             <Route path="/profile" component={Profile}/>
             <Route path="/learn_more" component={Learn_more}/>
             <Redirect to="/profile"/>
